@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Error Solution</title>
+</head>
+<body>
+  <div id="myDiv">
+    <p>This is some text.</p>
+  </div>
+
+  <script>
+    // Correct way to access element using its index
+    let divElements = document.getElementsByTagName('div');
+    divElements[0].innerHTML = "<p>This text replaces the original content.</p>";
+    
+    // Alternative: Using getElementById
+    let myDiv = document.getElementById('myDiv');
+    myDiv.innerHTML = "<p>This is another way to modify content.</p>";
+  </script>
+</body>
+</html>
